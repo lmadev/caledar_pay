@@ -10,7 +10,7 @@ class Calendar extends Iterator
     const TIME_MODIFY_ADD_14_DAY = '+14 day';
     const TIME_MODIFY_MINUS_1_DAY = '-1 day';
     const TIME_MODIFY_MINUS_2_DAY = '-2 day';
-    const TIME_MODIFY_FIRST_WEDNESDAY_IN_MONTH = 'first wednesday of this month';
+    const TIME_MODIFY_FIRST_WEDNESDAY = 'next wednesday';
     const TIME_DATE_DEFAULT_FORMAT = 'd.m.Y';
     const WEK_DAY = ['Sat', 'Sun'];
 
@@ -62,8 +62,7 @@ class Calendar extends Iterator
         if('Sat' === $dayName || 'Sun' === $dayName)
         {
             $this->pay[$this->key()]['bonus'] =
-                $this->date->modify(self::TIME_MODIFY_FIRST_WEDNESDAY_IN_MONTH)
-                    ->format('d.m.Y');
+                $this->date->modify(self::TIME_MODIFY_FIRST_WEDNESDAY)->format(self::TIME_DATE_DEFAULT_FORMAT);
         }
     }
 
