@@ -9,15 +9,23 @@
 
     git clone https://github.com/lmadev/caledar_pay.git
     
-1.) Clone the git repository to the desired location using:
+2.) Install composer:
 
-    composser install
+    composer install
 
-2.) Set the correct directory permissions:
+3.) Set the correct directory permissions:
 
     chmod -R 775 *
 
-3.) Run index.php
+4.) Run console commands index.php
     
-       The csv file will be saved in the ./output/pay.csv folder
+       php index.php
+   OR
+   
+       http://localhost/index.php
+       
+5.) Output file:
+
+    /output/pay.csv
+      
        
