@@ -8,6 +8,10 @@
 1.) Clone the git repository to the desired location using:
 
     git clone https://github.com/lmadev/caledar_pay.git
+    
+1.) Clone the git repository to the desired location using:
+
+    composser install
 
 2.) Set the correct directory permissions:
 
